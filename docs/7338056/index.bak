@@ -4,84 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS, rel="stylesheet" is not part of signposting  -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<!-- Signposting examples follows -->
+    <!-- Copy and modify below line to add Signposting -->    
+    <link href="" rel="self" />
 
-    <!-- Persistent identifier -->
-    <link href="https://doi.org/10.5281/zenodo.7338056" rel="cite-as" />
-       
-    <!-- Type of downloadable resource AND the landing page -->
-    <link href="https://schema.org/Dataset" rel="type" />
-    <link href="https://schema.org/AboutPage" rel="type" />
-
-    <!-- Persistent identifiers of authors, if known -->
-    <link href="https://orcid.org/0000-0003-2978-8922" rel="author" />
-    <link href="https://orcid.org/0009-0004-1529-0095" rel="author" />
-    <link href="https://orcid.org/0000-0002-1018-0370" rel="author" />
-    <link href="https://orcid.org/0000-0003-3986-0510" rel="author" />
-    
-    <!-- Persistent identifier of license, if known -->
-    <link href="https://spdx.org/licenses/CC-BY-4.0" rel="license" />
-
-    <!-- Downloadable item(s), e.g. csv, pdf, zip. May be external/CDN, but is not a PID. -->
-    <link 
-        href="https://zenodo.org/records/7338056/files/Fleiss%20Kappa%20for%20document-to-document%20relevant%20assessment.csv?download=1"
-        rel="item"
-        type="text/csv" />
-    <link 
-        href="fleiss.tsv"
-        rel="item"
-        type="text/tab-separated-values" />
-
-
-    <!-- Metadata resources -->
-    <link
-        href="bioschemas.jsonld" 
-        rel="describedby"
-        type="application/ld+json"
-        profile="https://bioschemas.org/profiles/Dataset/1.1-DRAFT"
-    />    
-    <!-- Specify profile=".." if known, specially if multiple metadata have same type=".." -->
-    <link
-        href="https://zenodo.org/records/7338056/export/json-ld" 
-        rel="describedby" 
-        type="application/ld+json"
-        profile="http://schema.org/"/>
-
-    <link 
-        href="https://zenodo.org/records/7338056/export/bibtex"
-        rel="describedby"
-        type="application/x-bibtex"
-     />
-    <link 
-        href="https://zenodo.org/records/7338056/export/datacite-xml" 
-        rel="describedby" 
-        type="application/vnd.datacite.datacite+xml"/>
-    <link 
-        href="https://zenodo.org/records/7338056/export/dublincore" 
-        rel="describedby" 
-        type="application/xml"
-        profile="http://purl.org/dc/elements/1.1/"/>
-    
-
-
-    <!-- Link to the collection(s) which have this resource as an item -->
-    <link
-        href="/signposting-tutorial/"
-        rel="collection">
-
-<!-- 
-    End of Signposting, see other registered link relation types at
-    https://www.iana.org/assignments/link-relations/
--->
-   
     <title>Example dataset: Fleiss kappa for doc-2-doc relevance assessment</title>
   </head>
 
+  
   <body class="container">
     <h1>Fleiss kappa for doc-2-doc relevance assessment</h1>
     <p class="lead">Example dataset for Signposting tutorial</p>
@@ -103,14 +35,14 @@
 </section>
 
 
-<div class="card">
+<div id="abstract" class="card">
     <h2 class="card-header">Abstract</h2>  
 <p class="card-body">
     Here we present a table summarizing the Fleiss’ kappa results. The Fleiss’ Kappa was calculated as a way to measure the degree of agreement between four annotators who evaluated the relevance of a set of documents (15 evaluation articles) regarding its corresponding “reference article”. The table contains 7 columns, the first one presents the topics, 8 in total. The second column shows the “reference articles”, represented by their PubMed-ID and organized by topic. The third column shows the Fleiss’ Kappa results. The fourth column shows the interpretation of the Fleiss' Kappa results being: i) “Poor” results &lt;0.20, ii) “Fair” results within 0.21 - 0.40, and iii) “Moderate” results within 0.41 - 0.60. The fifth column shows the PubMed-IDs of evaluation articles rated by the four annotators as “Relevant” regarding its corresponding “reference article”. The sixth column shows the PubMed-IDs of evaluation articles rated by the four annotators as “Partially relevant” regarding its corresponding “reference article”. The seventh column shows the PubMed-IDs of evaluation articles rated by the four annotators as “Non-relevant” regarding its corresponding “reference article”.
 </p>
 </div>
 
-<div class="card">
+<div class="card" id="metadata">
 <h2 class="card-header">Metadata</h2>
 
 <dl class="card-body">
@@ -152,7 +84,7 @@
 </div>
 
 
-<div class="card">
+<div id="download" class="card">
     <h2 class="card-header">Download</h2>
     <ul class="card-body">
         <code>Fleiss Kappa for document-to-document relevant assessment.csv</code> (3.3 kB)
@@ -162,14 +94,14 @@
 
 
 
-<div class="card">
+<div class="card" id="acknowledgement">
     <h2 class="card-header">Acknowledgements</h2>  
 <p class="card-body">
     This work is part of the STELLA project funded by DFG (project no. 407518790). This work was supported by the BMBF-funded de.NBI Cloud within the German Network for Bioinformatics Infrastructure (de.NBI) (031A532B, 031A533A, 031A533B, 031A534A, 031A535A, 031A537A, 031A537B, 031A537C, 031A537D, 031A538A)
 </p>
 </div>
 
-<div class="card">
+<div class="card"  id="metadata">
     <h2 class="card-header">Export</h2>
     <p class="card-body">
         Metadata can be downloaded as:
@@ -181,12 +113,8 @@
 </ul>
 </div>
 
-<!--
-    Optional Bioschemas  / schema.org markup, see 
-    https://github.com/zbmed-semtec/bioschemas-ghpages-markup-tutorial
--->
 
-<script type="application/ld+json">
+<script type="application/ld+json" id="bioschemas">
     {
     "@context": "https://schema.org", 
     "@type": "Dataset",
@@ -217,3 +145,4 @@
 
   </body>
 </html>
+
